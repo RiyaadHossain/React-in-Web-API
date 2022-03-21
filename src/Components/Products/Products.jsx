@@ -26,7 +26,7 @@ const Products = () => {
                 products.map(product => <Product product={product}></Product>)
             }
             <h3><strong>Add Result:</strong> { add(+allProducts[0].price , allProducts[1].price)}</h3>
-            <h3><strong>Multiply Result:</strong> { multiply(+allProducts[3].price , allProducts[4].price)}</h3>
+            <h3><strong>Multiply Result:</strong> {multiply(+allProducts[3].price, allProducts[4].price)}</h3>
         </div>
     );
 };

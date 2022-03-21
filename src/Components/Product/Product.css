@@ -3,3 +3,12 @@
     padding: 15px;
     margin: 20px;
 }
+.btn{
+    border: none;
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 21px;
+}
