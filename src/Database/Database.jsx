@@ -16,4 +16,15 @@ const addToDB = (id) => {
     localStorage.setItem('cart', JSON.stringify(cart))
 }
 
-export {addToDB}
+const removeDB = (id) => {
+    const cart = localStorage.getItem('cart')
+    if (cart) {
+        const storedData = JSON.parse(cart)
+        if (id in storedData) {
+            delete storedData[id]
+            localStorage.setItem('cart', JSON.stringify(storedData))
+        }
+    }
+}
+
+export {addToDB, removeDB}

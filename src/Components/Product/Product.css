@@ -12,3 +12,8 @@
     font-weight: 500;
     font-size: 21px;
 }
+
+.btn-remove{
+    background-color: darkred;
+    margin-left: 15px;
+}
