@@ -1,5 +1,5 @@
 import React from 'react';
-import { addToDB, removeDB } from '../../Database/Database';
+import { addToDB, removeDB } from '../Database/Database';
 import './Product.css'
 
 const Product = ({ product }) => {
