@@ -1,5 +1,5 @@
 const addToDB = (id) => {
-    // console.log('hello');
+    // Get the Data
     let cart = {}
     let cartDB = localStorage.getItem('cart')
     if (cartDB) {
@@ -20,7 +20,7 @@ const removeDB = (id) => {
     const cart = localStorage.getItem('cart')
     if (cart) {
         const storedData = JSON.parse(cart)
-        if (id in storedData) {
+        if (id in storedData) { // check - if there any data named "id"
             delete storedData[id]
             localStorage.setItem('cart', JSON.stringify(storedData))
         }
