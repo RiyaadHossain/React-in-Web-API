@@ -5,10 +5,10 @@ import './Product.css'
 const Product = ({ product }) => {
     const { id, name, price } = product
     const pStyle = { fontSize: '22px' }
-    const addToCart = (id) => {
+    const addToCart = () => {
         addToDB(name)
     }
-    const removeFromDB = (id) => {
+    const removeFromDB = () => {
         removeDB(name)
     }
     return (
